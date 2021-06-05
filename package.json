@@ -1,0 +1,17 @@
+{
+  "name": "jaridpoe",
+  "version": "1.0.0",
+  "description": "jarid's photos",
+  "main": "index.js", 
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve",
+    "debug": "DEBUG=Eleventy* eleventy",
+    "deploy": "aws s3 sync _site/ s3://BUCKET_NAME"
+  },
+  "author": "jarid poe",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1"
+  }
+}

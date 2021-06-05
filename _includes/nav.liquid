@@ -1,0 +1,5 @@
+<nav class="flex-container-row">
+ {% for nav in collections.nav %}
+ <a href="{{ nav.url }}" class="nav-link">{{ nav.data.title }}</a>
+ {% endfor %}
+</nav>

@@ -1,0 +1,20 @@
+---
+layout: base.liquid
+title: Gallery
+tags: nav
+date: 2020-01-01
+---
+
+<h3>Gallery</h3>
+<div>
+  {% for pic in collections.art %}
+  <a href="{{ pic.url }}">
+    <div>
+      <div>
+        <img src="{{ pic.data.path }}" alt="{{ pic.data.name }}" />
+      </div>
+      <span>{{ pic.data.name }}</span>
+    </div>
+  </a>
+  {% endfor %}
+</div>
