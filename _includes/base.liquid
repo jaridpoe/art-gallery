@@ -1,24 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
-        <title>Jarid Poe</title>
-        <link href="/assets/css/main.css" rel="stylesheet" type="text/css"/>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      name="viewport"
+    />
+    <title>Jarid</title>
+  </head>
 
-    <body>
-        {% include header.html %}
-        {% include nav.liquid %}
-        <div class="container-fluid">
+  <body>
+    {% include header.html %} {% include nav.liquid %}
+    <div>
+      <main>
+        {{ content }}
+      </main>
 
-
-            <main class="container">
-                {{ content }}
-            </main>
-
-            {% include footer.html %}
-
-        </div>
-    </body>
+      {% include footer.html %}
+    </div>
+  </body>
 </html>
